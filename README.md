@@ -36,7 +36,7 @@ For support, email support@jacktor.com or join our Telegram channel.
 - [@jacktor-stan (Deni Liandi)](https://www.github.com/jacktor-stan)
 
 
-## 🔗 Links
+## Links
 [![facebook](https://img.shields.io/badge/facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/jacktor29/)
 
 [![facebook](https://img.shields.io/badge/facebook,%20deni%20liandi-3b5998?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/deniliandi29/)
