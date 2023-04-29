@@ -33,7 +33,7 @@ For support, email support@jacktor.com or join our Telegram channel.
 
 ## Authors
 
-- [@jacktor-stan](https://www.github.com/jacktor-stan)
+- [@jacktor-stan (Deni Liandi)](https://www.github.com/jacktor-stan)
 
 
 ## 🔗 Links
