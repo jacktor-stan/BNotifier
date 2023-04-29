@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.about.AboutFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dip"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip"
+                    android:paddingBottom="10.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:gravity="center_vertical"
+                        android:minHeight="50.0dip"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip">
+
+                        <View
+                            android:layout_width="15dip"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <View
+                            android:layout_width="15dip"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_name"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                tools:ignore="TextContrastCheck" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50.0dip"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip">
+
+                        <View
+                            android:layout_width="20.0dip"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_info_24"
+                            tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/version"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                            <TextView
+                                android:id="@+id/app_version"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_40" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/changelog_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dip"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip">
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_restore_24"
+                            tools:ignore="ImageContrastCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/changelog"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="10dip" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dip"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_marginBottom="10dip"
+                        android:text="@string/author"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    <LinearLayout
+                        android:id="@+id/author_btn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="50dip"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip">
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:layout_width="40dip"
+                            android:layout_height="40dip"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_person_24"
+                            tools:ignore="TouchTargetSizeCheck,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/author_name"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/at_jacktor"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_40"
+                                tools:ignore="TextContrastCheck" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="10dip" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="15dip" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="15dip" />
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:singleLine="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/network_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/offline"
+                    app:chipIcon="@drawable/ic_data_usage_24"
+                    tools:ignore="TextContrastCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/data_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/data_provided_by_app"
+                    app:chipIcon="@drawable/ic_info_24" />
+            </com.google.android.material.chip.ChipGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/developer_team"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/team_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="30dip" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/other_team"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+            <Button
+                android:id="@+id/otherTeam_btn"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_all_teams"
+                app:icon="@drawable/ic_view_compact_alt_24"
+                tools:ignore="TextContrastCheck" />
+
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="30dip" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/contributor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/no_contributors" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

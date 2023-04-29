@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_premium_24"
+        android:id="@+id/upgrade_pro"
+        android:title="@string/upgrade_pro"
+        app:showAsAction="ifRoom" />
+    <item
+        android:icon="@drawable/ic_action_settings_24"
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/more_apps"
+        android:title="@string/more_apps" />
+
+</menu>

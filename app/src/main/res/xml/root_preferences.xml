@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/notification"
+        android:icon="@drawable/ic_notifications_24">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notification_service"
+            android:summary="@string/pref_notification_service_smry"
+            android:title="@string/pref_notification_service_title"
+            android:widgetLayout="@layout/preferences_widget_switch_m3" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="time_remaining"
+            android:summary="@string/pref_time_remaining_smry"
+            android:title="@string/pref_time_remaining"
+            android:widgetLayout="@layout/preferences_widget_switch_m3" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="fahrenheit"
+            android:title="@string/use_fahrenheit"
+            android:widgetLayout="@layout/preferences_widget_switch_m3" />
+
+        <Preference
+            android:key="manage_notification"
+            android:summary="@string/manage_notification_smry"
+            android:title="@string/manage_notification" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/appearance"
+        android:icon="@drawable/ic_general_24">
+        <ListPreference
+            android:defaultValue="light"
+            android:enabled="false"
+            android:entries="@array/mode_entries"
+            android:entryValues="@array/mode_values"
+            android:key="theme"
+            android:title="@string/theme" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_audio"
+        android:icon="@drawable/ic_audio_24">
+        <Preference
+            android:key="ac_connected_sound"
+            android:title="@string/pref_power_connected_ac_audio_title" />
+        <Preference
+            android:key="usb_connected_sound"
+            android:title="@string/pref_power_connected_usb_audio_title" />
+        <Preference
+            android:key="disconnected_sound"
+            android:title="@string/pref_power_disconnected_audio_title" />
+        <EditTextPreference
+            android:defaultValue="550"
+            android:inputType="number"
+            android:key="sound_delay"
+            android:title="@string/pref_audio_delay_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_vibration"
+        android:icon="@drawable/ic_vibration_24">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="enable_vibration"
+            android:summary="@string/pref_enable_vibration_smry"
+            android:title="@string/pref_enable_vibration_title"
+            android:widgetLayout="@layout/preferences_widget_switch_m3" />
+        <ListPreference
+            android:defaultValue="450"
+            android:entries="@array/vibrate_key"
+            android:entryValues="@array/vibrate_value"
+            android:key="vibrate_duration"
+            android:title="@string/pref_vibration_duration_title" />
+        <EditTextPreference
+            android:defaultValue="450"
+            android:enabled="false"
+            android:inputType="number"
+            android:key="custom_vibrate_duration"
+            android:title="@string/pref_custom_vibration_duration_title" />
+        <ListPreference
+            android:defaultValue="connected"
+            android:entries="@array/vibrate_mode_key"
+            android:entryValues="@array/vibrate_mode_value"
+            android:key="vibrate_mode"
+            android:title="@string/pref_vibration_mode_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_advanced"
+        android:icon="@drawable/ic_developer_mode_24">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="start_on_boot"
+            android:summary="@string/pref_start_app_on_boot_smry"
+            android:title="@string/pref_start_on_boot_title"
+            android:widgetLayout="@layout/preferences_widget_switch_m3" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="enable_toast"
+            android:summary="@string/pref_show_toast_smry"
+            android:title="@string/pref_show_toast_title"
+            android:widgetLayout="@layout/preferences_widget_switch_m3" />
+
+        <!--<CheckBoxPreference
+            android:title="@string/pref_memory_optimization"
+            android:key="memory_optimization"
+            android:defaultValue="false"
+            android:summary="@string/pref_memory_optimization_smry" />-->
+    </PreferenceCategory>
+
+</PreferenceScreen>

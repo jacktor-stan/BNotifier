@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.battery.BatteryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Scroll view -->
+        <androidx.core.widget.NestedScrollView
+            style="@style/AppTheme.NestedScrollBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2682CC"
+                android:padding="15dp"
+                app:alignmentMode="alignBounds"
+                app:columnCount="3">
+
+                <com.jacktorscript.batterynotifier.widget.ArcProgress
+                    android:id="@+id/battery_view"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="150dp"
+                    app:arc_bottom_text="@string/battery"
+                    app:arc_text_color="@color/white" />
+
+                <com.jacktorscript.batterynotifier.widget.ArcProgress
+                    android:id="@+id/cpu_view_usage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="150dp"
+                    app:arc_bottom_text="@string/cpu"
+                    app:arc_text_color="@color/white"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/lastStateChangeTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="8.0dip"
+                        android:paddingBottom="8.0dip"
+                        android:text="@string/discharging_from"
+                        android:textSize="18.0sp"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:alignmentMode="alignBounds"
+                app:columnCount="2">
+
+
+                <!-- Health -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="12.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="28.0dip"
+                            android:layout_height="28.0dip"
+                            app:srcCompat="@drawable/ic_health_24"
+                            app:tint="@color/battery_health" />
+                        <!--android:alpha="0.66"-->
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/health"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="@color/md_theme_primary" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_health"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/good"
+                            android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="?android:textColorSecondary" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- Status -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="12.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ic_state"
+                            android:layout_width="28.0dip"
+                            android:layout_height="28.0dip"
+                            app:srcCompat="@drawable/ic_battery_status_24"
+                            app:tint="@color/battery_discharge" />
+                        <!--android:alpha="0.66"-->
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/battery_status"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="@color/md_theme_primary" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_status"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/discharging"
+                            android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="?android:textColorSecondary" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- Status -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="12.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ic_plugged_type"
+                            android:layout_width="28.0dip"
+                            android:layout_height="28.0dip"
+                            app:srcCompat="@drawable/ic_ac_unplugged_24"
+                            app:tint="@color/battery_off"
+                            android:alpha="0.66" />
+                        <!--android:alpha="0.66"-->
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/plugged_type"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="@color/md_theme_primary" />
+
+                        <TextView
+                            android:id="@+id/txt_plugged_type"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_plugged"
+                            android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="?android:textColorSecondary" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- Status -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="12.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="28.0dip"
+                            android:layout_height="28.0dip"
+                            app:srcCompat="@drawable/ic_battery_capacity_24"
+                            app:tint="@color/battery_unknown" />
+                        <!--android:alpha="0.66"-->
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/capacity"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="@color/md_theme_primary" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_capacity"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0_mah"
+                            android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_tech"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/li_poly"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="?android:textColorSecondary" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- Temperature -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="12.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ic_temperature"
+                            android:layout_width="28.0dip"
+                            android:layout_height="28.0dip"
+                            app:srcCompat="@drawable/ic_temperature_24"
+                            app:tint="@color/battery_temp_normal" />
+                        <!--android:alpha="0.66"-->
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/temperature"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="@color/md_theme_primary" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_temp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0_c"
+                            android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_temp_f"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="?android:textColorSecondary" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- Voltage -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardElevation="0dp"
+                    app:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:padding="12.0dip">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ic_wattage"
+                            android:layout_width="28.0dip"
+                            android:layout_height="28.0dip"
+                            app:srcCompat="@drawable/ic_voltage_24"
+                            app:tint="@color/battery_power" />
+                        <!--android:alpha="0.66"-->
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/power_monitor"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="@color/md_theme_primary" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_current"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0w"
+                            android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+                        <TextView
+                            android:id="@+id/txt_battery_voltage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0v"
+                            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                            android:textColor="?android:textColorSecondary" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

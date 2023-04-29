@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vibrate_key">
+        <item>@string/pref_vibration_short</item>
+        <item>@string/pref_vibration_medium</item>
+        <item>@string/pref_vibration_long</item>
+        <item>@string/pref_vibration_custom</item>
+    </string-array>
+    <string-array name="vibrate_value">
+        <item>150</item>
+        <item>250</item>
+        <item>450</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="vibrate_mode_key">
+        <item>@string/pref_connected</item>
+        <item>@string/pref_disconnected</item>
+        <item>@string/pref_both</item>
+    </string-array>
+    <string-array name="vibrate_mode_value">
+        <item>connected</item>
+        <item>disconnected</item>
+        <item>both</item>
+    </string-array>
+
+    <string-array name="mode_entries">
+        <item>@string/theme_follow_by_system</item>
+        <item>@string/theme_dark</item>
+        <item>@string/theme_light</item>
+    </string-array>
+    <string-array name="mode_values">
+        <item>system</item>
+        <item>dark</item>
+        <item>light</item>
+    </string-array>
+</resources>

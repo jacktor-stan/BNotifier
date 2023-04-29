@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">BNotifier</string>
+    <string name="charging">Charging</string>
+    <string name="discharging">Discharging</string>
+    <string name="notcharging">Not charging</string>
+    <string name="full">Full</string>
+    <string name="unknown">Unknown</string>
+    <string name="battery_info">%1$s From %2$d\%% for %3$dd %4$dh %5$dm</string>
+    <string name="good">Good</string>
+    <string name="overheat">Overheat</string>
+    <string name="overvolt">Over voltage</string>
+    <string name="dead">Dead</string>
+    <string name="failed">Failed</string>
+    <string name="cold">Cold</string>
+    <string name="category_vibration">Vibration</string>
+    <string name="category_advanced">Advanced</string>
+    <string name="toast_power_connected">Power is connected!</string>
+    <string name="toast_power_disconnected">Power is disconnected!</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="more_apps">More Apps</string>
+    <string name="ac" translatable="false">AC</string>
+    <string name="usb" translatable="false">USB</string>
+    <string name="wireless" translatable="false">Wireless</string>
+    <string name="discharging_from">Discharging from 0% for 0d 0h 0m</string>
+    <string name="upgrade_pro">Upgrade to PRO</string>
+    <string name="already_purchased">Already Purchased</string>
+    <string name="appearance">Appearance</string>
+    <string name="theme">Theme (PRO)</string>
+    <string name="notification_service">Notification Service</string>
+    <string name="notification_channel_desc">App still works if notification is hidden</string>
+    <string name="manage_notification">Manage Notification</string>
+    <string name="notification">Notification</string>
+    <string name="use_fahrenheit">Use Fahrenheit</string>
+    <string name="upgrade_to_pro">UPGRADE TO PRO</string>
+    <string name="theme_follow_by_system">Follow by system</string>
+    <string name="theme_dark">Dark Mode</string>
+    <string name="theme_light">Light Mode</string>
+    <string name="select_file">SELECT AUDIO FROM FILE</string>
+    <string name="changes_saved">Changes Saved</string>
+    <string name="audio_not_selected">Audio not selected</string>
+    <string name="restore">Restore Purchase</string>
+    <string name="remove_ads">Remove ADS</string>
+    <string name="all_features">All Features</string>
+    <string name="already_purchased_sb">No need, already bought</string>
+    <string name="jacktor_msg">I\'m waiting for you…</string>
+    <string name="jacktor_msg_purchased">Thank you for upgrading to pro</string>
+    <string name="notification_permission_blocked_SB">Notification Blocked</string>
+    <string name="notification_permission_granted">Notification Permission Granted</string>
+    <string name="storage_permission_not_granted_SB">Storage permission not granted</string>
+    <string name="audio_permission_not_granted_SB">Audio permission not granted</string>
+    <string name="manage_notification_smry">Show or hide notifications can be done</string>
+    <string name="temperature">Temperature</string>
+    <string name="health">Health</string>
+    <string name="restore_purchases_success">Successfully restored</string>
+    <string name="restore_purchases_not_found">Oops, No purchase found.</string>
+    <string name="wait">Wait…</string>
+    <string name="battery">BATTERY</string>
+    <string name="battery_status">Battery Status</string>
+    <string name="_0_c" translatable="false">0°C</string>
+    <string name="_0v" translatable="false">0V</string>
+    <string name="li_poly" translatable="false">Li-poly</string>
+    <string name="plugged_type">Plugged Type</string>
+    <string name="not_plugged">Not plugged</string>
+    <string name="capacity">Capacity</string>
+    <string name="_0_mah" translatable="false">0 mAh</string>
+    <string name="power_monitor">Power Monitor</string>
+    <string name="_0w" translatable="false">0W</string>
+    <string name="cpu" translatable="false">CPU</string>
+    <string name="welcome_advisory">BNotifier does not collect analytics, sell your data to third parties. Your data is stored securely and privately on your device.</string>
+    <string name="welcome_btn_continue">Get Started</string>
+    <string name="welcome_feature_one_summary">Get all the current status information and information about your battery.</string>
+    <string name="welcome_feature_one_title">Battery status &amp; info</string>
+    <string name="welcome_feature_two_summary">Set custom charging audio, replace system default audio.</string>
+    <string name="welcome_feature_two_title">Custom charging audio</string>
+    <string name="welcome_feature_third_summary">Designed with material design 3 and dark mode support.</string>
+    <string name="welcome_feature_third_title">Simple design</string>
+    <string name="welcome_feature_three_summary">Can measure your charger and detect charge or discharge instability.</string>
+    <string name="welcome_feature_three_title">Ammeter</string>
+    <string name="welcome_title">Welcome to BNotifier</string>
+    <string name="tab_battery">Battery</string>
+    <string name="reset_audio_success">Sound successfully reset</string>
+    <string name="reset_audio_failed">Audio failed to reset</string>
+    <string name="audio_has_been_reset">The audio has been reset</string>
+    <string name="reset">RESET</string>
+    <string name="category_audio">Audio</string>
+    <string name="refresh_settings">Refresh Settings</string>
+    <string name="restore_defaults">Restore Defaults</string>
+    <string name="restore_settings_toast">Settings Restored</string>
+    <string name="refresh_toast">Refresh…</string>
+    <string name="cancel">Cancel</string>
+    <string name="restore_settings_dialog_title">Restore to original settings?</string>
+    <string name="yes_continue">Yes, Continue</string>
+    <string name="author_name" translatable="false">Deni Liandi</string>
+    <string name="version">Version</string>
+    <string name="changelog">Changelog</string>
+    <string name="author">Author</string>
+    <string name="other_team">Other Team</string>
+    <string name="developer_team">Developer Team</string>
+    <string name="data_received_from_jacktor_com">Data received from jacktor.com</string>
+    <string name="project_status">In Project</string>
+    <string name="name">Name</string>
+    <string name="username" translatable="false">\@%1$s</string>
+    <string name="contributor">Contributor</string>
+    <string name="data_provided_by_app">Data provided by app</string>
+    <string name="offline" translatable="false">Offline</string>
+    <string name="online" translatable="false">Online</string>
+    <string name="no_contributors">There are no contributors at this time</string>
+    <string name="ok">OK</string>
+    <string name="show_all_teams">Show All Teams</string>
+    <string name="visit_this_profile_title">Visit this profile?</string>
+    <string name="at_jacktor" translatable="false">\@jacktor</string>
+
+    <string name="format_time_remaining_days">%1$dd %2$dh %3$dm left</string>
+    <string name="format_time_remaining_hours">%1$dh %2$dm left</string>
+    <string name="format_time_remaining_mins">%1$dm left</string>
+    <string name="format_command" translatable="false">pm grant %1$s %2$s</string>
+
+    <string name="dialog_time_remaining_title">Failed to Give Permission Automatically</string>
+    <string name="dialog_time_remaining_content">BNotifier could not obtain the BATTERY_STATS permission automatically. If your device is rooted, please press \"Try Again\" and allow the root command. Otherwise, you can use ADB to give this permission.</string>
+    <string name="dialog_adb_title">ADB Instructions</string>
+    <string name="dialog_adb_content">Please run the following command to give the required permission:</string>
+    <string name="dialog_button_close">Close</string>
+    <string name="dialog_button_tryagain">Try Again</string>
+
+    <string name="pref_notification_service_title">Notification Service</string>
+    <string name="pref_notification_service_smry">If this is disabled the app need not always run in the background</string>
+    <string name="pref_notification_service_smry2">On Android 8.0 and above notification service must always be on to run all functions in the background</string>
+    <string name="pref_power_connected_ac_audio_title">Select audio for AC</string>
+    <string name="pref_power_connected_usb_audio_title">Select audio for USB</string>
+    <string name="pref_power_disconnected_audio_title">Select audio for power is disconnected</string>
+    <string name="pref_audio_delay_title">Audio delay</string>
+    <string name="pref_enable_vibration_title">Enable vibration</string>
+    <string name="pref_enable_vibration_smry">Vibrate when power is connected or disconnected</string>
+    <string name="pref_show_toast_title">Show toast</string>
+    <string name="pref_show_toast_smry">Show toast power is connected or disconnected</string>
+    <string name="pref_vibration_duration_title">Vibration duration</string>
+    <string name="pref_custom_vibration_duration_title">Custom vibration duration (PRO)</string>
+    <string name="pref_vibration_short">Short</string>
+    <string name="pref_vibration_medium">Medium</string>
+    <string name="pref_vibration_long">Long (default)</string>
+    <string name="pref_vibration_custom">Custom</string>
+    <string name="pref_connected">Connected</string>
+    <string name="pref_disconnected">Disconnected</string>
+    <string name="pref_both">Both</string>
+    <string name="pref_start_on_boot_title">Start on boot</string>
+    <string name="pref_start_app_on_boot_smry">Start app on boot</string>
+    <string name="pref_vibration_mode_title">Vibration mode</string>
+    <string name="pref_time_remaining">Show time remaining on battery/charging</string>
+    <string name="pref_time_remaining_smry">For Rooted Devices</string>
+</resources>
+

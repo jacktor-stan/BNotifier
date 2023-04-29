@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_restore_24"
+        android:id="@+id/restore_pref"
+        android:title="@string/restore_defaults"
+        app:showAsAction="ifRoom" />
+    <item
+        android:icon="@drawable/ic_refresh_24"
+        android:id="@+id/refresh_pref"
+        android:title="@string/refresh_settings"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,16 @@
+[V2.0.1]
+- Bug Fixes
+
+[V2.0.0]
+- Battery Notifier > BNotifier
+- New User Interface
+- New App Icon
+- Support For Android 13 Tiramisu
+- Added Battery Capacity Info
+- Added Power Monitor
+- Added CPU Usage (BETA)
+- Added Custom Vibration Duration (PRO Only)
+- Settings use Fahrenheit now only for notifications
+- Bug Fixes
+
+Note: Android 4.4 KitKat is no longer supported

@@ -1,0 +1,16 @@
+[V2.0.1]
+- Perbaikan Bug
+
+[V2.0.0]
+- Battery Notifier > BNotifier
+- Antarmuka Pengguna Baru
+- Ikon Aplikasi Baru
+- Dukungan Untuk Android 13 Tiramisu
+- Menambahkan Info Kapasitas Baterai
+- Menambahkan Monitor Daya
+- Menambahkan Penggunaan CPU (BETA)
+- Menambahkan Durasi Getaran Khusus (Khusus PRO)
+- Pengaturan Gunakan Fahrenheit sekarang hanya untuk notifikasi
+- Perbaikan bug
+
+Catatan: Android 4.4 KitKat tidak lagi didukung
