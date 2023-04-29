@@ -1,7 +1,7 @@
 
 # BNotifier
 
-This is a personal project
+This is a private project
 
 Play Store: https://play.google.com/store/apps/details?id=com.jacktorscript.batterynotifier
 
