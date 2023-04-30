@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.jacktorscript.batterynotifier",
+  "variantName": "dev",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 7,
+      "versionName": "2.0.1.30042023-dev",
+      "outputFile": "app-dev.apk"
+    }
+  ],
+  "elementType": "File"
+}

@@ -5,6 +5,11 @@ plugins {
 }
 
 android {
+    //version
+    def versionMajor = 2
+    def versionMinor = 0
+    def versionPatch = 1
+
     compileSdk 33
 
     defaultConfig {
@@ -12,20 +17,27 @@ android {
         minSdk 21
         targetSdk 33
         versionCode 7
-        versionName '2.0.1'
+        //versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
         multiDexEnabled false
         vectorDrawables.useSupportLibrary = true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-
-
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        dev {
+            minifyEnabled true
+            shrinkResources true
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            versionNameSuffix ".${new Date().format('ddMMyyyy')}-dev"
         }
     }
     compileOptions {
