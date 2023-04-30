@@ -5,7 +5,6 @@
       "username": "zulkifli",
       "name": "Zulkifli Ibnu Umar",
       "imgURL": "file:///android_asset/Images/zulkifli.png",
-      "role": "um_moderator",
       "projectStatus": "0"
     },
     {
@@ -13,7 +12,6 @@
       "username": "nanazdina",
       "name": "Lunatia Els",
       "imgURL": "file:///android_asset/Images/nanazdina.png",
-      "role": "administrator",
       "projectStatus": "0"
     },
     {
@@ -21,7 +19,6 @@
       "username": "fajar",
       "name": "Fajar Akang UP",
       "imgURL": "file:///android_asset/Images/fajar.png",
-      "role": "um_moderator",
       "projectStatus": "0"
     },
     {
@@ -29,7 +26,6 @@
       "username": "bonfire.png",
       "name": "Bonfire Fox",
       "imgURL": "file:///android_asset/Images/bonfire.png",
-      "role": "um_moderator",
       "projectStatus": "0"
     }
   ]

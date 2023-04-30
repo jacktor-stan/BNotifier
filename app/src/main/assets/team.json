@@ -5,7 +5,6 @@
 			"username": "jacktor",
 			"name": "Deni Liandi",
 			"imgURL": "file:///android_asset/Images/jacktor.png",
-			"role": "administrator",
 			"projectStatus": "1"
 		},
 		{
@@ -13,7 +12,6 @@
 			"username": "diane",
 			"name": "Muhammad Fariz Fadilllah",
 			"imgURL": "file:///android_asset/Images/diane.png",
-			"role": "administrator",
 			"projectStatus": "1"
 		},
 		{
@@ -21,7 +19,6 @@
 			"username": "nanang_cyrliv",
 			"name": "Nanang Cyrliv",
 			"imgURL": "file:///android_asset/Images/nanang_cyrliv.png",
-			"role": "um_moderator",
 			"projectStatus": "1"
 		}
 	]
