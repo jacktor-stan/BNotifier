@@ -1,9 +1,13 @@
 
 # BNotifier
 
-This is a private project
+This is a personal project
 
-Play Store: https://play.google.com/store/apps/details?id=com.jacktorscript.batterynotifier
+
+
+[![Play Store](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.jacktorscript.batterynotifier%26l%3DPlay%2520Store%26m%3D%24version%2520-%2520%2520%2524updated
+)](https://play.google.com/store/apps/details?id=com.jacktorscript.batterynotifier)
+
 
 
 ## Screenshots
@@ -33,13 +37,5 @@ For support, email support@jacktor.com or join our Telegram channel.
 
 ## Authors
 
-- [@jacktor-stan (Deni Liandi)](https://www.github.com/jacktor-stan)
-
-
-## Links
-[![facebook](https://img.shields.io/badge/facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/jacktor29/)
-
-[![facebook](https://img.shields.io/badge/facebook,%20deni%20liandi-3b5998?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/deniliandi29/)
-
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/deniliandi29)
+- [@JacktorStan - Deni liandi](https://www.github.com/JacktorStan)
 
