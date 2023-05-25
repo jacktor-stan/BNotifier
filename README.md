@@ -1,7 +1,7 @@
 
 # BNotifier
 
-This is a personal project
+This is a personal project, 
 BNotifier has been discontinued
 
 
