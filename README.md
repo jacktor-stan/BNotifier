@@ -6,7 +6,8 @@ BNotifier is a further development of Battery Notifier and Charging Notifier
 This is an incomplete version for battery information focused on custom charging sounds
 
 
-
+Full Version "Battery Lab":
+https://github.com/JacktorStan/batterylab-official
 
 
 [![Play Store](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.jacktorscript.batterynotifier%26l%3DPlay%2520Store%26m%3D%24version%2520-%2520%2520%2524updated
