@@ -36,7 +36,7 @@ Designed with material design 3 and dark mode support.
 
 ## Support
 
-For support, email support@jacktor.com or join our Telegram channel.
+For support, email support@jacktor.com or join our [Telegram group](https://t.me/JacktorSupport).
 
 
 ## Authors
