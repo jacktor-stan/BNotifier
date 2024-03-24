@@ -6,7 +6,7 @@ BNotifier is a further development of Battery Notifier and Charging Notifier
 This is an incomplete version for battery information focused on custom charging sounds
 
 
-Full Version "Battery Lab":
+New Version "Battery Lab":
 https://github.com/JacktorStan/batterylab-official
 
 
